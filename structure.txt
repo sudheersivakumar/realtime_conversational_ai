@@ -1,0 +1,48 @@
+realtime_conversational_ai/
+│
+├── backend/
+│   ├── app.py                  # FastAPI application entry point
+│   ├── main.py                 # Main script to run the FastAPI server
+│   ├── models/
+│   │   ├── __init__.py         # Initialize the models package
+│   │   ├── encoder.py          # Encoder model definition
+│   │   ├── decoder.py          # Decoder model definition
+│   │   ├── emotion_tracker.py  # Emotion tracker model definition
+│   │   ├── memory_network.py   # Memory network model definition
+│   │   ├── hierarchical_attention.py  # Hierarchical attention mechanism
+│   │   └── utils.py            # Utility functions for models
+│   ├── data/
+│   │   ├── __init__.py         # Initialize the data package
+│   │   ├── preprocess.py       # Data preprocessing functions
+│   │   ├── dataset.py          # Dataset class for loading and processing data
+│   │   └── emotions.py         # Emotion labeling and analysis
+│   ├── services/
+│   │   ├── __init__.py         # Initialize the services package
+│   │   ├── conversation_service.py  # Service for handling conversations
+│   │   └── emotion_service.py     # Service for handling emotion tracking
+│   ├── config.py               # Configuration settings
+│   ├── requirements.txt        # Python dependencies
+│   └── train.py                # Script for training the models
+│
+├── frontend/
+│   ├── public/
+│   │   ├── index.html          # Main HTML file
+│   │   └── favicon.ico         # Favicon
+│   ├── src/
+│   │   ├── assets/             # Static assets (images, fonts, etc.)
+│   │   ├── components/         # Reusable React components
+│   │   │   ├── ChatBox.js      # Chat box component
+│   │   │   ├── Message.js      # Message component
+│   │   │   └── EmotionBar.js   # Emotion bar component
+│   │   ├── pages/              # Main pages
+│   │   │   ├── Home.js         # Home page
+│   │   ├── App.js              # Main App component
+│   │   ├── index.js            # Entry point for React app
+│   │   ├── styles.css          # Global styles
+│   │   └── tailwind.config.js  # Tailwind CSS configuration
+│   ├── package.json            # Node.js dependencies and scripts
+│   └── tailwind.config.js      # Tailwind CSS configuration
+│
+├── .gitignore                  # Git ignore file
+├── README.md                   # Project documentation
+└── docker-compose.yml          # Docker Compose file for containerization

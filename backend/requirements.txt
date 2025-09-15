@@ -1,0 +1,33 @@
+# FastAPI and related dependencies
+fastapi
+uvicorn
+pydantic
+
+# PyTorch for building and training models
+torch
+torchvision
+torchaudio
+
+# Transformers for sentiment analysis and other NLP tasks
+transformers
+
+# Other utilities
+numpy
+pandas
+scikit-learn
+nltk
+spacy
+sentence-transformers
+
+# Data handling and preprocessing
+scipy
+tqdm
+
+# Logging and monitoring
+loguru
+
+# Optional: For GPU support (uncomment if using GPU)
+# torch==1.13.1+cu117
+# torchvision==0.14.1+cu117
+# torchaudio==0.13.1+cu117
+# -f https://download.pytorch.org/whl/torch_stable.html
